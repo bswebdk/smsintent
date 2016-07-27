@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Copyright © 2016 BSWeb.DK <bsweb@bruchhaus.dk>
+    This file is part of SMSIntent (com.bswebdk.smsintent).
+
+    SMSIntent is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    SMSIntent is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with SMSIntent.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<resources>
+
+    <string name="app_name">SMSIntent</string>
+    <string name="action_settings">Settings</string>
+    <string name="no_items">No templates</string>
+    <string name="title_activity_edit">Template properties</string>
+    <string name="title_activity_edit_grp">Group properties</string>
+    <string name="list_img_info">Icon</string>
+    <string name="enter_title">Title</string>
+    <string name="enter_address">Address (optional)</string>
+    <string name="enter_value">Message</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="import_intents">Import</string>
+    <string name="export_intents">Export</string>
+    <string name="export_failed">Export failed :-(</string>
+    <string name="export_success">Export succeeded :-)</string>
+    <string name="import_failed">Import failed :-(</string>
+    <string name="import_success">Import succeeded :-)</string>
+    <string name="add">Add</string>
+    <string name="add_group">Add group</string>
+    <string name="about">About</string>
+    <string name="help">Help</string>
+    <string name="edit">Edit</string>
+    <string name="ok">OK</string>
+    <string name="delete">Delete</string>
+    <string name="dummy">Dummy</string>
+    <string name="add_ask">Insert question&#8230;</string>
+    <string name="ask_for">Ask for</string>
+    <string name="ask_as">Ask for</string>
+    <string name="ask_for_err_missing">Ask for must be specified</string>
+    <string name="ask_for_err_invalid">Ask for cannot contain "}"</string>
+    <string name="edit_title_missing">Title must be specified</string>
+    <string name="edit_value_missing">Message must be specified</string>
+    <string name="about_app_package">Package</string>
+    <string name="about_app_version">Version</string>
+    <string name="about_app_date">Build date</string>
+    <string name="about_app_copyright">Copyright</string>
+    <string name="close">Close</string>
+    <string name="unknown">Unknown</string>
+    <string name="title_activity_about">About SMSIntent</string>
+    <string name="title_activity_ask">Questions</string>
+    <string name="group_of">Group of %1$d template(s)</string>
+    <string name="info_created">Created</string>
+    <string name="info_modified">Modified</string>
+    <string name="info_lastuse">Last used</string>
+    <string name="info_usages">Usages</string>
+    <string name="information">Information</string>
+    
+    <string-array name="ask_as_items">
+        <item>As plain text</item>
+        <item>As a date</item>
+        <item>As a time of day</item>
+    </string-array>
+    <string-array name="ask_as_values">
+        <item>TEXT</item>
+        <item>DATE</item>
+        <item>TIME</item>
+    </string-array>
+
+    <string name="help_html"><![CDATA[
+        
+        <h2>Documentation</h2>
+        
+        SMSIntent is as small app that manages SMS templates which
+        may or may not include questions / inqueries. The templates
+        can with a simple tap / click be launched as an intent to
+        the SMS app.
+        
+        <p>
+        
+        <b>Create new template</b><br>
+        Click the plus button in the action bar in the top. Templates will
+        be created in the group that is currently opened.
+        <p>
+        
+        <b>Edit template</b><br>
+        Long-tap the intent you want to edit and select the "Edit"
+        item in the menu that appears.
+        <p>
+         
+        <b>Delete template</b><br>
+        As with Edit template - just select the Delete item instead.
+        
+        <h3>Template properties</h3>
+        
+        <b>Title</b><br>
+        Used to identify the template in the list.
+        <p>
+        
+        <b>Address (optional)</b><br>
+        Can optionally be used for declaring a recipient for the SMS.
+        <p>
+        
+        <b>Message</b><br>
+        This is the message content for the template that may include
+        questions that must be filled out prior to sending the SMS.
+        <p>
+        
+        <b>Insert question...</b><br>
+        Use this button to intert a question to the message. If you want
+        to edit an existing question in the message you must select it
+        from &quot;{?&quot; to &quot;}&quot; before you click the button.
+        
+        <h3>Question properties</h3>
+        
+        <b>Ask for</b><br>
+        The question (or title thereof) that will be prompted.
+        <p>
+        
+        <b>As as ...</b><br>
+        The type of data that should be gathered. This can be either
+        plain text as a text field, a date as a date picker or a point in
+        time as a time picker.
+        
+        <h3>Groups</h3>
+        You can create groups by selecting the "Create group" menu item
+        or by tapping the folder icon in the action bar. A group consists
+        of a title and a default address that will be suggested to as
+        default recipient for all templates created in the group. Groups
+        are edited and deleted as templates and when a group is deleted
+        all the templates in it are deleted with it. A group cannot contain
+        other groups.
+        
+        <h3>Use a template</h3>
+        In order to use a template you must simply tap it in the list. If
+        the template has any questions in it a dialog will appear and ask you
+        to answer the questions. When the SMS has been constructed it will be
+        passed to the SMS app and SMSIntent will automatically close.
+
+        <h3>Import / Export templates</h3>
+        SMSIntent has a feature for exporting all templates to a file on an
+        external media. External media might be an SD-card or it might be a
+        shared location in the handsets internal memory. You can gain access
+        to the export feature in the About box through the menu. The export
+        button will only be enabled if templates are available and a writable
+        storage option is present.
+        <p>
+        Importing previously exported templates can be done with the Import
+        button next to the Export button. The import button will be disabled
+        if no previously exported templates exists.
+        <p>
+        The location for the export file is: <code>$EXP$</code>
+        
+    ]]></string>
+
+</resources>

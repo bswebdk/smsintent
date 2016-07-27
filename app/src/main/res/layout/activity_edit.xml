@@ -1,0 +1,123 @@
+<!--
+    Copyright © 2016 BSWeb.DK <bsweb@bruchhaus.dk>
+    This file is part of SMSIntent (com.bswebdk.smsintent).
+
+    SMSIntent is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    SMSIntent is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with SMSIntent.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".EditActivity"
+    android:paddingBottom="@dimen/dialog_vertical_margin"
+    android:paddingLeft="@dimen/dialog_horizontal_margin"
+    android:paddingRight="@dimen/dialog_horizontal_margin"
+    android:paddingTop="@dimen/dialog_vertical_margin" >
+    
+    <EditText
+        android:id="@+id/edit_title"
+        android:hint="@string/enter_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:singleLine="true"
+        android:maxLength="25"
+        android:ems="10" >
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edit_address"
+        android:hint="@string/enter_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_title"
+        android:singleLine="true"
+        android:maxLength="25"
+        android:ems="10" >
+    </EditText>
+
+    <!--ScrollView
+        android:id="@+id/scroll_value"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/edit_address" -->
+
+        <EditText
+            android:id="@+id/edit_value"
+        	android:hint="@string/enter_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:lines="4"
+            android:gravity="top|left"
+            android:layout_below="@id/edit_address"
+            android:inputType="textMultiLine" />
+        
+        <Button
+            android:id="@+id/add_ask_button"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@id/edit_value"
+            android:text="@string/add_ask"
+            android:background="?android:attr/selectableItemBackground" />
+        
+        <View
+            android:id="@+id/edit_vsep"
+            android:layout_below="@id/add_ask_button"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#90909090" />
+
+    <!--/ScrollView-->
+
+        <!--     android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" -->
+            
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_vsep"
+            style="?android:attr/buttonBarStyle" >
+
+            <Button
+                android:id="@+id/edit_no_button"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cancel"
+                android:background="?android:attr/selectableItemBackground" />
+
+	        <View
+	            android:id="@+id/edit_hsep"
+	            android:layout_width="1dp"
+	            android:layout_height="match_parent"
+	            android:background="#90909090" />
+            
+            <Button
+                android:id="@+id/edit_ok_button"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/save"
+                android:background="?android:attr/selectableItemBackground" />
+
+            
+       </LinearLayout>
+
+</RelativeLayout>

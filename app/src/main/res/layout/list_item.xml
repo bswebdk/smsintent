@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Copyright © 2016 BSWeb.DK <bsweb@bruchhaus.dk>
+    This file is part of SMSIntent (com.bswebdk.smsintent).
+
+    SMSIntent is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    SMSIntent is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with SMSIntent.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/img_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/list_img_info"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/txt_addr"
+        android:layout_toRightOf="@+id/img_view"
+        android:text="@string/dummy"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txt_addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_title"
+        android:layout_alignBottom="@+id/txt_title"
+        android:layout_alignParentRight="true"
+        android:text="@string/dummy" />
+
+    <TextView
+        android:id="@+id/txt_snippet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txt_title"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txt_title"
+        android:scrollHorizontally="true"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/dummy"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

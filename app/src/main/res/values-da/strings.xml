@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Copyright © 2016 BSWeb.DK <bsweb@bruchhaus.dk>
+    This file is part of SMSIntent (com.bswebdk.smsintent).
+
+    SMSIntent is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    SMSIntent is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with SMSIntent.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<resources>
+
+    <string name="app_name">SMSIntent</string>
+    <string name="action_settings">Indstillinger</string>
+    <string name="no_items">Ingen skabeloner</string>
+    <string name="title_activity_edit">Skabelonegenskaber</string>
+    <string name="title_activity_edit_grp">Gruppeegenskaber</string>
+    <string name="list_img_info">Ikon</string>
+    <string name="enter_title">Titel</string>
+    <string name="enter_address">Adresse (valgfri)</string>
+    <string name="enter_value">Besked</string>
+    <string name="save">Gem</string>
+    <string name="cancel">Annullér</string>
+    <string name="import_intents">Importer</string>
+    <string name="export_intents">Exporter</string>
+    <string name="export_failed">Eksportering mislykkedes :-(</string>
+    <string name="export_success">Eksportering lykkedes :-)</string>
+    <string name="import_failed">Importering mislykkedes :-(</string>
+    <string name="import_success">Importering lykkedes :-)</string>
+    <string name="add">Tilføj</string>
+    <string name="add_group">Tilføj gruppe</string>
+    <string name="about">Om</string>
+    <string name="help">Hjælp</string>
+    <string name="edit">Redigér</string>
+    <string name="ok">OK</string>
+    <string name="delete">Slet</string>
+    <string name="dummy">Dumbo</string>
+    <string name="add_ask">Indsæt spørgsmål&#8230;</string>
+    <string name="ask_for">Spørg efter</string>
+    <string name="ask_as">Spørg som</string>
+    <string name="ask_for_err_missing">Spørg efter skal oplyses</string>
+    <string name="ask_for_err_invalid">Spørg efter må ikke indeholde "}"</string>
+    <string name="edit_title_missing">Titel skal oplyses</string>
+    <string name="edit_value_missing">Besked skal oplyses</string>
+    <string name="about_app_package">Pakke</string>
+    <string name="about_app_version">Version</string>
+    <string name="about_app_date">Byggedato</string>
+    <string name="about_app_copyright">Copyright</string>
+    <string name="close">Luk</string>
+    <string name="unknown">Ukendt</string>
+    <string name="title_activity_about">Om SMSIntent</string>
+    <string name="title_activity_ask">Spørgsmål</string>
+    <string name="group_of">Gruppe med %1$d skabelon(er)</string>
+    <string name="info_created">Oprettet</string>
+    <string name="info_modified">Ændret</string>
+    <string name="info_lastuse">Senest anvendt</string>
+    <string name="info_usages">Anvendelser</string>
+    <string name="information">Information</string>
+    
+    <string-array name="ask_as_items">
+        <item>Som ren tekst</item>
+        <item>Som en dato</item>
+        <item>Som et tidspunkt</item>
+    </string-array>
+    <string-array name="ask_as_values">
+        <item>TEKST</item>
+        <item>DATO</item>
+        <item>TID</item>
+    </string-array>
+
+    <string name="help_html"><![CDATA[
+        
+        <h2>Dokumentation</h2>
+        
+        SMSIntent er en lille app, der holder styr på skabeloner som
+        kan indeholde spørgsmål / forespørgsler, der skal udfyldes.
+        Med et enkelt tap / klik kan skabelonerne blive aktiveret, og
+        sendt til SMS app\'en.
+        
+        <p>
+        
+        <b>Opret en ny skabelon</b><br>
+        Klik på plus-knappen i menuen øverst. Skabelonerne vil blive
+        oprettet i den gruppe, der er åben. 
+        <p>
+        
+        <b>Redigér skabelon</b><br>
+        Klik og hold på den skabelon, du gerne vil redigere, og vælg
+        "Redigér" i den menu, der dukker op efter et stykke tid.
+        <p>
+         
+        <b>Slet skabelon</b><br>
+        Samme som ved redigering men vælg "Slet" i menuen i stedet for.
+        
+        <h3>Skabelonegenskaber</h3>
+        
+        <b>Titel</b><br>
+        Benyttes til at identificere skabelonen i listen.
+        <p>
+        
+        <b>Adresse (valgfri)</b><br>
+        Kan benyttes til at definere en modtager til SMS\'en.
+        <p>
+        
+        <b>Besked</b><br>
+        Dette er skabelonens besked tekst, som kan indeholde spørgsmål
+        eller forespørgsler.
+        <p>
+        
+        <b>Indsæt spørgsmål...</b><br>
+        Benyt denne knap til at indsætte et spørgsmål i beskeden. Hvis du
+        ønsker at redigere et spørgsmål, som allerede er i beskeden, så
+        skal dette markeres fra &quot;{?&quot; til &quot;}&quot; inden du
+        klikker knappen.
+        
+        <h3>Spørgsmålets egenskaber</h3>
+        
+        <b>Spørg efter</b><br>
+        Titlen på det spørgsmål, der bliver stillet.
+        <p>
+        
+        <b>Spørg som ...</b><br>
+        Den type data, der skal indhentes som svar på spørgsmålet. Dette
+        kan enten være ren tekst, der skal indtastes, en dato, der skal
+        vælges eller et tidspunkt, der skal angives.
+        
+        <h3>Grupper</h3>
+        Du kan oprette grupper ved at vælge menupunktet "Opret gruppe" eller
+        ved at trykke på mappeikonet i aktionsbaren. En gruppe består af en
+        titel, der vises i listen, og en valgfri adresse der vil blive foreslået
+        som standardmodtager til alle skabeloner, der oprettes i gruppen.
+        Grupper redigeres og slettes på samme måde som skabeloner, og når
+        en gruppe slettes, så slettes også alle skabeloner i den. En gruppe
+        kan ikke have undergrupper.
+        
+        <h3>Benytte en skabelon</h3>
+        For at bruge en skabelon, skal du blot tappe / klikke på den i listen.
+        Hvis skabelonen indeholder spørgsmål, som skal besvares, så vil du
+        blive bedt om at besvare disse. Når beskeden er komplet, vil den blive
+        sendt til SMS app\'en, der tager sig af at afsende den. SMSIntent vil
+        automatisk lukke efter dette.
+        
+        <h3>Importer / Exporter skabeloner</h3>
+        SMSIntent har en indbygget funktion, dr kan benyttes til at eksportere
+        alle skabeloner til et eksternt medie. Det eksterne medie kan være et
+        SD-kort, eller det kan være et delt område i telefonens interne hukommelse.
+        Du kan få adgang til denne funktion i Om-boksen, som kan åbnes ved at
+        benytte menuen. Knappen til at eksportere skabeloner vil være deaktiveret,
+        hvis der ikke er oprettet nogen skabeloner, eller hvis der ikke forefindes
+        et passende lagermedie.
+        <p>
+        Importering af tidligere eksporterede skabeloner gøres med knappen
+        Importer ved siden af knappen Eksporter. Importeringsknappen vil være
+        deaktiveret hvis ikke der forefindes tidligere eksporterede skabeloner.
+        <p>
+        Placeringen for exporterede skabeloner er: <code>$EXP$</code>
+    ]]></string>
+
+</resources>
